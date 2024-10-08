@@ -1,0 +1,2 @@
+var openOrderBtn=document.getElementById("openOrderBtn"),ordernMenuModal=document.getElementById("orderMenuModal"),closeOrderMenuBtn=document.getElementById("closeOrderMenuBtn");openOrderBtn.addEventListener("click",(function(){ordernMenuModal.style.display="block",closeOrderMenuBtn.style.display="block",document.body.classList.add("no-scroll-menu")})),closeOrderMenuBtn.addEventListener("click",(function(){ordernMenuModal.style.display="none"}));
+//# sourceMappingURL=index.b7bd5590.js.map
