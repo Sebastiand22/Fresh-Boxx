@@ -1,0 +1,1765 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
+}
+ul,
+ol,
+li,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  background-color: #ae1332;
+  overflow: hidden;
+}
+.menu-content {
+  display: none;
+}
+.floating-shapes {
+  display: none;
+}
+.shape {
+  display: none;
+}
+.header {
+  height: 75px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar h2 {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  margin: 16px 0px;
+  color: #ae1332;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 30px;
+  height: 33px;
+  margin: 17px 20px;
+}
+.no-scroll {
+  overflow: hidden; /* Blochează scroll-ul pe body */
+}
+/* MODAL Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  overflow: hidden;
+  top: 75px;
+  width: 100%;
+  height: 100%;
+  background-color: #ae1332;
+  border: 1px solid white;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 124px;
+}
+
+.modal-content a {
+  color: white;
+  font-size: 14px;
+}
+
+/* HERO SECTION */
+
+.hero h1 {
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.girl {
+  border-radius: 231px;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+  bottom: 50px;
+
+  box-shadow:0 0px #47012e, 0 1.5px 0 .4px #3f001280;
+
+}
+
+.girl:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 40px rgba(147, 2, 55, 0.7),
+    0px -30px 60px rgb(197, 4, 84);
+}
+.shop {
+  width: 80px;
+  height: 80px;
+  border-radius: 67px;
+  position: relative;
+  bottom: 102px;
+  transform: rotate(336deg);
+
+}
+
+.button-shop {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #ae1332;
+}
+
+.description {
+  color: #ffffff;
+  width: 279px;
+  max-width: 100%;
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: start;
+  line-height: 1.29;
+}
+/* BLUR FRUITS */
+.fruits1 {
+  position: relative;
+}
+.blur-strawberry {
+  position: absolute;
+  top: 50px;
+  transform: rotate(48deg);
+  width: 30%;
+  right: 60px;
+}
+.blur-banana {
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+  width: 30%;
+  transform: rotate(13deg);
+}
+
+/* WATERMELLON  */
+.block-green {
+  background-color: #a4cb66;
+  width: 249px;
+  min-height: 387px;
+  border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.watermelon-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.watermelon-box h2 {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin-top: 28px;
+  color: white;
+}
+.watermelon-box img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: 36px;
+  margin-bottom: 2px;
+}
+
+.watermelon-box p {
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 47px;
+  margin-right: 47px;
+}
+
+/* STRAWBERRY  */
+.block-orange {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.strawberry-box {
+  display: flex;
+  flex-direction: column;
+  background: #f5ce13;
+  width: 249px;
+  min-height: 387px;
+  border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.strawberry-box h2 {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin-top: 28px;
+  color: white;
+}
+.strawberry-box img {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: auto;
+  margin-top: 2px;
+}
+
+.strawberry-box p {
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 47px;
+  margin-right: 47px;
+}
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.hastag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.hastag-list-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 1000px;
+
+  flex: 1 1 45%;
+}
+.block-hastags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.hastag-list-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* HOW IT WORKS SECTION MOBIlE */
+.container-step {
+  max-width: 375px;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title-step {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.description-step {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  height: 112px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.step-title {
+  width: 100%;
+  max-width: 136px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  border-radius: 200px;
+}
+
+.step-description {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-align: left;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.step-list-item:nth-child(1) .step-title {
+  background-color: #ae1332;
+}
+
+.step-list-item:nth-child(2) .step-title {
+  background-color: #a1c864;
+}
+
+.step-list-item:nth-child(3) .step-title {
+  background-color: #f5ce13;
+}
+
+.gif {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 476px;
+  width: auto;
+  max-width: 100%;
+}
+
+/* ORGANIC FRUITS SECTION */
+
+.organic-fruit-section {
+  max-width: 375px;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.organic-fruits-title {
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: white;
+}
+.organic-fruit-section p {
+  display: block;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.organic-fruit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.organic-fruit-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  border-radius: 20px;
+}
+
+.strawberry {
+  background-color: #f8766b;
+}
+.banana {
+  background-color: #edd251;
+}
+.watermelon {
+  background-color: #9dc262;
+}
+.lime {
+  background-color: #bfd663;
+}
+.apple1 {
+  background-color: #e93f29;
+}
+.peach {
+  background-color: #db4f4b;
+}
+.plums {
+  display: none;
+  background-color: #9b5366;
+}
+.orange {
+  display: none;
+  background-color: #f47f4c;
+}
+.kiwi {
+  background-color: #98b37e;
+}
+
+.organic-fruit-item button {
+  background: #ffffff;
+  border-radius: 22px;
+  color: #ae1332;
+  width: 121px;
+  border: none;
+  padding: 12px;
+  height: 46px;
+  margin-top: 6px;
+}
+
+.organic-fruit-item h3 {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: white;
+  margin-top: 64px;
+}
+
+.organic-fruit-item span {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: white;
+  margin-top: 8px;
+}
+.order-button {
+  background-color: #99ee11;
+  width: 80px;
+  height: 80px;
+  border-radius: 66px;
+  color: #ffffff;
+  margin-top: 44px;
+  font-weight: 700;
+  font-size: 15px;
+  transform: rotate(-14deg);
+  margin-bottom: 40px;
+  margin-left: 132px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+  align-items: center;
+}
+.fresh-picture {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+.fresh-picture2 {
+  display: none;
+}
+.contact-title {
+  max-width: 335px;
+  margin-bottom: -43px;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.form-fresh {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.form-description {
+  display: none;
+}
+
+.input-form-fresh {
+  width: 270px;
+  padding: 15px 0 15px 24px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  border-color: #ffffff4d;
+  border-radius: 100px;
+}
+.form-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-button {
+  position: absolute;
+  right: -1px;
+  display: flex;
+  margin-left: 0;
+  align-items: center;
+  padding: 15px 35px;
+  height: 48px;
+  border-radius: 100px;
+  color: #fff;
+  background: #9dc162;
+  border-color: transparent;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  transition: background-color var(--anim-transition);
+}
+/* FOOTER */
+.footer {
+  height: 626px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section h3 {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #ae1332;
+  margin-bottom: 20px;
+}
+
+.link-list-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: DM Sans;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.link-list-footer a {
+  color: #ae1332;
+}
+
+.contact-footer-adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.phone {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #ae1332;
+  margin-bottom: 14px;
+}
+.adress {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ae1332;
+}
+.footer-img {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 44px;
+}
+.social-list-item svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* SMALL MODAL */
+
+.small-modal {
+  display: none;
+  width: 335px;
+  height: 426px;
+  border-radius: 20px;
+  background-color: rgb(224, 63, 94);
+  border: none;
+  position: relative;
+}
+
+.small-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.pop-up-title {
+  font-family: DM Sans;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+.pop-up-description {
+  font-family: DM Sans;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+}
+
+/* Order MEnu Modal */
+
+.order-menu-modal {
+  display: none;
+  width: 375px;
+  min-height: 600px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.order-menu-modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-menu-title {
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: #ae1332;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.order-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.order-menu-list-item {
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  padding: 14px 32px 8px 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.order-menu-list-title {
+  font-family: DM Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: white;
+}
+.order-menu-span {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: white;
+}
+
+.strawberry2 {
+  background-color: #f8766b;
+}
+.apple2 {
+  background-color: #edd251;
+}
+.fruit {
+  background-color: #9dc262;
+}
+
+.close-menu-order {
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  margin-top: 14px;
+}
+.order-menu-span {
+  display: block; /* Asigură-te că spanul este un element bloc */
+  margin-top: 5px; /* Adaugă un spațiu între h3 și span */
+}
+
+.check-button {
+  position: absolute;
+  display: inline-block;
+  width: 24px; /* Dimensiunea butonului */
+  height: 24px;
+  right: 13px;
+}
+
+.check-button input {
+  opacity: 0; /* Ascunde checkbox-ul real */
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 0;
+  bottom: 0;
+  background-color: #60616066;
+  border-radius: 4px;
+}
+
+.check-button input:checked + .checkmark {
+  background-color: #ae1332; /* Culoarea când checkbox-ul este bifat */
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.check-button input:checked + .checkmark:after {
+  display: block;
+}
+
+.check-button .checkmark:after {
+  left: 7px; /* Poziția semnului de check */
+  top: 3px; /* Poziția semnului de check */
+  width: 5px; /* Lățimea semnului de check */
+  height: 10px; /* Înălțimea semnului de check */
+  border: solid white; /* Culoarea semnului de check */
+  border-width: 0 2px 2px 0; /* Dimensiunile semnului de check */
+  transform: rotate(45deg); /* Rotește semnul de check */
+}
+
+/* FORM MODAL DESIGN */
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.form-label {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid yellowgreen; /* Margine transparentă */
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333; /* Text de culoare închisă pentru contrast */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input::placeholder {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.comments {
+  height: 100px; /* Dimensiunea mai mare pentru zona de comentarii */
+  resize: none; /* Previne redimensionarea zonei de comentarii */
+}
+
+.submit-button {
+  background-color: #08ee0e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 50px;
+}
+
+/* ANIMATIONS  */
+.submit-button:hover {
+  background-color: #9a122a;
+}
+.form-input:focus {
+  border-color: #ae1332;
+  box-shadow: 0 0 5px rgba(174, 19, 50, 0.5);
+}
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.step-list-item:nth-child(1):hover {
+  transform: scale(1.02);
+  background-color: #4f032ce8;
+}
+
+.step-list-item:nth-child(2):hover {
+  transform: scale(1.02);
+  background-color: #034f2ee8;
+}
+.step-list-item:nth-child(3):hover {
+  transform: scale(1.02);
+  background-color: #bab407e2;
+}
+
+.organic-fruit-item:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    /* lumina difuză */ 0 0 30px rgba(255, 255, 255, 0.7),
+    /* strălucire mai intensă */ 0 0 45px rgba(255, 255, 255, 0.9); /* strălucirea exterioară */
+}
+.strawberry:hover {
+  transform: skew(-5deg); /* Mărește puțin elementul la hover */
+}
+
+.banana:hover {
+  transform: skew(5deg); /* Mărește puțin elementul la hover */
+}
+.watermelon:hover {
+  transform: skew(-5deg); /* Mărește puțin elementul la hover */
+}
+.lime:hover {
+  transform: skew(5deg); /* Mărește puțin elementul la hover */
+}
+.apple1:hover {
+  transform: skew(-5deg); /* Mărește puțin elementul la hover */
+}
+.peach:hover {
+  transform: skew(5deg); /* Mărește puțin elementul la hover */
+}
+.plums:hover {
+  transform: skew(-5deg); /* Mărește puțin elementul la hover */
+}
+.orange:hover {
+  transform: skew(5deg); /* Mărește puțin elementul la hover */
+}
+.kiwi:hover {
+  transform: skew(-5deg); /* Mărește puțin elementul la hover */
+}
+
+/* TABLET DESIGN */
+
+@media (min-width: 768px) {
+  .girl img {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    display: block;
+  }
+
+  .floating-shapes {
+    display: none;
+  }
+  .shape {
+    display: none;
+  }
+
+  .description {
+    position: relative;
+    right: 200px;
+    top: 50px;
+    color: #ffffff;
+    font-size: 19px;
+  }
+  .girl {
+    border-radius: 232px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+    line-height: 1.08;
+  }
+  .shop {
+    width: 114px;
+    height: 114px;
+    margin-top: -57px;
+    font-size: 28px;
+    bottom: 50px;
+  }
+
+  .shop span {
+    font-family: DM Sans;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .blur-banana {
+    width: 20%;
+    top: 170px;
+    display: inline-block;
+    position: absolute;
+  }
+
+  .blur-strawberry {
+    width: 20%;
+    position: absolute;
+    top: 4px;
+    transform: rotate(48deg);
+    right: 60px;
+  }
+
+  .blocks {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .block-green {
+    background-color: #a4cb66;
+    width: 350px;
+    height: 457px;
+    border-radius: 500px;
+    position: relative;
+    top: 150px;
+  }
+
+  .block-orange {
+    background: #f5ce13;
+    width: 350px;
+    height: 457px;
+    border-radius: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hastag-list {
+    margin-top: 40px;
+  }
+  .strawberry-box img {
+    margin-top: 19px;
+  }
+  .strawberry-box h2 {
+    font-size: 35px;
+  }
+  .watermelon-box h2 {
+    font-size: 35px;
+  }
+  .watermelon-box img {
+    margin-top: 70px;
+  }
+
+  .title-step {
+    margin-top: 213px;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .container-step {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps-list {
+    max-width: 389px;
+  }
+
+  .description-step {
+    color: white;
+    display: block;
+    width: 509px;
+    margin: 0 auto 44px;
+  }
+  .organic-fruit-section {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .organic-fruits-title {
+    font-family: DM Sans;
+    font-size: 50px;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+  }
+
+  .organic-fruit-section p {
+    display: block;
+    text-align: center;
+    max-width: 547px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .organic-fruit-list {
+    display: flex;
+    flex-direction: row; /* schimbă de la column la row */
+    flex-wrap: wrap; /* permite articolelor să se alinieze pe mai multe linii */
+    gap: 45px; /* poți ajusta acest gap dacă e nevoie */
+    padding: 36px;
+    justify-content: center;
+  }
+
+  .organic-fruit-item {
+    display: flex;
+    padding: 41px;
+    height: 400px;
+    min-width: 30%; /* ajustat pentru a permite 3 articole pe linie */
+    max-width: 300px; /* limitează lățimea maximă */
+    border-radius: 20px;
+    transition: transform 0;
+  }
+
+  .kiwi {
+    display: none;
+  }
+
+  .organic-fruit-item h3 {
+    margin-top: 0;
+  }
+
+  .order-button {
+    width: 112px;
+    height: 112px;
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fresh-picture-container {
+    display: flex;
+    gap: 16px;
+  }
+  .fresh-picture2 {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .form-description {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
+    color: white;
+    padding: 0 138px;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
+
+/* DESKTOP DESIGN */
+@media (min-width: 1280px) {
+
+  .shop {
+    width: 115px;
+    height: 115px;
+    margin-top: -57px;
+    font-size: 28px;
+    bottom: 50px;
+    z-index: 1;
+  }
+
+  .button-shop {
+    font-family: DM Sans;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .header {
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-container img.logo {
+    height: 50px;
+  }
+
+  .logo-container h2 {
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+    color: #9a122a;
+  }
+
+  .menu-content {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .menu-content a {
+    color: #9a122a;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .menu-content .box {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header button {
+    display: none;
+  }
+
+  .blur-strawberry {
+    width: 15%;
+    position: absolute;
+    top: 37px;
+    right: 204px;
+  }
+  .blur-banana {
+    width: 15%;
+    top: 170px;
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    
+  }
+
+  h1 {
+    font-family: DM Sans;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+  }
+
+  .girl {
+    border-radius: 231px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+    bottom: 50px;
+    border: 1px solid;
+    border-color: white;
+    box-shadow: 4px 7px 20px 0px #fffdfd;
+  }
+
+  .description {
+    margin-bottom: 1px;
+  }
+
+  .fruits1 {
+    position: relative;
+  }
+
+  .watermelon-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-orange {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .strawberry-box {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .hastag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .hastag-list-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 1000px;
+    flex: 1 1 45%;
+  }
+
+  .block-hastags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hastag-list-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .container-step {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .title-step {
+    margin-top: 213px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: white;
+  }
+
+  .description-step {
+    color: white;
+    display: block;
+    width: 509px;
+    margin: 0 auto 44px;
+  }
+
+  .steps-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1280px;
+  }
+
+  .step-list-item {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .title-step {
+    display: block;
+    width: 642px;
+  }
+
+  .step-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .kiwi {
+    display: block;
+  }
+
+  .organic-fruit-section {
+    max-width: 1280px;
+  }
+
+  /* Containere pentru forme plutitoare */
+  .floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+
+  .shape {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite;
+    opacity: 0.7;
+    transition: transform 0.5s ease-in-out, opacity 1.5s ease-in-out;
+    animation: float 5s ease-in-out infinite, fadeInOut 4s ease-in-out infinite;
+
+  }
+
+  /* Efect de plutire */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Efect de hover: dispersie pe ecran */
+  .shape:hover {
+    transform: translate(
+        calc(200vw * (rand() - 0.5)),
+        calc(200vh * (rand() - 0.5))
+      )
+      scale(2);
+    opacity: 0; /* Formele dispar complet */
+    animation: none; /* Oprește plutirea la hover */
+  }
+
+  /* Animație de dispariție și reapariție treptată */
+  @keyframes fadeInOut {
+    0%,
+    100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  
+  /* Forme individuale cu poziționare unică */
+  .shape-1 {
+    width: 100px;
+    height: 100px;
+    top: 38%;
+    left: 19%;
+    animation-delay: 1s;
+  }
+
+  .shape-2 {
+    width: 80px;
+    height: 80px;
+    bottom: 24%;
+    right: 15%;
+    animation-delay: 3s;
+  }
+
+  .shape-3 {
+    width: 80px;
+    height: 80px;
+    top: 67%;
+    left: 15%;
+    animation-delay: 5s;
+  }
+
+  .shape-4 {
+    width: 80px;
+    height: 80px;
+    top: 55%;
+    left: 23%;
+    animation-delay: 5s;
+  }
+
+  .shape-5 {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 73%;
+    animation-delay: 5s;
+  }
+
+  .shape-6 {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 90%;
+    animation-delay: 5s;
+  }
+
+  .shape-7 {
+    width: 80px;
+    height: 80px;
+    top: 55%;
+    left: 8%;
+    animation-delay: 5s;
+  }
+
+  .shape-8 {
+    width: 80px;
+    height: 80px;
+    top: 39%;
+    left: 87%;
+    animation-delay: 5s;
+  }
+
+  .shape-9 {
+    width: 80px;
+    height: 80px;
+    top: 65%;
+    left: 90%;
+    animation-delay: 5s;
+  }
+
+  .shape-10 {
+    width: 80px;
+    height: 80px;
+    top: 37%;
+    left: 3%;
+  }
+
+  .shape-11 {
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    left: 30%;
+    animation-delay: 5s;
+  }
+
+  .shape-12 {
+    width: 80px;
+    height: 80px;
+    top: 77%;
+    left: 93%;
+    animation-delay: 5s;
+  }
+
+  .shape-13 {
+    width: 80px;
+    height: 80px;
+    top: 82%;
+    left: 79%;
+    animation-delay: 5s;
+  }
+
+  .shape-14 {
+    width: 80px;
+    height: 80px;
+    top: 26%;
+    left: 12%;
+    animation-delay: 5s;
+  }
+  .shape-15 {
+    width: 80px;
+    height: 80px;
+    top: 65%;
+    left: 90%;
+    animation-delay: 5s;
+  }
+
+  .shape-16 {
+    width: 80px;
+    height: 80px;
+    top: 49%;
+    left: -2%;
+  }
+
+  .shape-17 {
+    width: 80px;
+    height: 80px;
+    top: 30%;
+    left: 76%;
+    animation-delay: 5s;
+  }
+
+  .shape-18 {
+    width: 80px;
+    height: 80px;
+    top: 69%;
+    left: 67%;
+    animation-delay: 5s;
+  }
+
+  .shape-19 {
+    width: 80px;
+    height: 80px;
+    top: 78%;
+    left: 12%;
+    animation-delay: 5s;
+  }
+
+  .shape-20 {
+    width: 80px;
+    height: 80px;
+    top: 74%;
+    left: 2%;
+    animation-delay: 5s;
+  }
+  .shape:hover {
+    transform: translate(
+        calc(200px * (rand() - 0.5)),
+        calc(200px * (rand() - 0.5))
+      )
+      scale(1.5);
+    opacity: 0.3; /* Opacitate scăzută în momentul dispersiei */
+    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  /* Efecte de dispersie unice pentru fiecare formă */
+  .shape-1:hover {
+    transform: translate(150px, -150px) scale(1.5);
+  }
+
+  .shape-2:hover {
+    transform: translate(-200px, 100px) scale(1.3);
+  }
+
+  .shape-3:hover {
+    transform: translate(100px, 200px) scale(1.7);
+  }
+
+  .shape-4:hover {
+    transform: translate(-100px, -150px) scale(1.4);
+  }
+
+  .shape-5:hover {
+    transform: translate(120px, -100px) scale(1.6);
+  }
+
+  .shape-6:hover {
+    transform: translate(-130px, 120px) scale(1.5);
+  }
+  .shape-7:hover {
+    transform: translate(150px, -150px) scale(1.5);
+  }
+
+  .shape-8:hover {
+    transform: translate(-200px, 100px) scale(1.3);
+  }
+
+  .shape-9:hover {
+    transform: translate(100px, 200px) scale(1.7);
+  }
+
+  .shape-10:hover {
+    transform: translate(-100px, -150px) scale(1.4);
+  }
+
+  .shape-11:hover {
+    transform: translate(120px, -100px) scale(1.6);
+  }
+
+  .shape-12:hover {
+    transform: translate(-130px, 120px) scale(1.5);
+  }
+  .shape-13:hover {
+    transform: translate(150px, -150px) scale(1.5);
+  }
+
+  .shape-14:hover {
+    transform: translate(-200px, 100px) scale(1.3);
+  }
+
+  .shape-15:hover {
+    transform: translate(100px, 200px) scale(1.7);
+  }
+
+  .shape-16:hover {
+    transform: translate(-100px, -150px) scale(1.4);
+  }
+
+  .shape-17:hover {
+    transform: translate(120px, -100px) scale(1.6);
+  }
+
+  .shape-18:hover {
+    transform: translate(-130px, 120px) scale(1.5);
+  }
+  .shape-19:hover {
+    transform: translate(150px, -150px) scale(1.5);
+  }
+
+  .shape-20:hover {
+    transform: translate(-200px, 100px) scale(1.3);
+  }
+}

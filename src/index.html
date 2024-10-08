@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh-BOX</title>
+    <link rel="icon" href="./images/logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <meta name="description" content="Fresh-BOX in town" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <link rel="stylesheet" href="./style/modern-normalize.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <div class="container">
+      <section class="header">
+        <div class="nav-bar">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+          <h2>Fresh Harvest Box</h2>
+          <ul class="menu-content">
+            <li><a href="#home">How It Works</a></li>
+            <li><a href="#fruits">Fruits</a></li>
+            <li><a href="#footer">Contacts</a></li>
+            <li>
+              <a href="#box"
+                ><img class="box" src="./images/box.svg" width="32" height="32"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <button id="openMenuBtn">
+          <svg
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="3" y="6" width="12" height="2" fill="#AE1332" />
+            <rect x="3" y="11" width="18" height="2" fill="#AE1332" />
+            <rect x="3" y="16" width="15" height="2" fill="#AE1332" />
+          </svg>
+        </button>
+
+        <button
+          id="closeModalBtn"
+          style="display: none"
+          aria-label="Close menu"
+        >
+          <svg
+            class="close-icon"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="4"
+              y1="4"
+              x2="20"
+              y2="20"
+              stroke="#AE1332"
+              stroke-width="2"
+            />
+            <line
+              x1="20"
+              y1="4"
+              x2="4"
+              y2="20"
+              stroke="#AE1332"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </section>
+      <!-- MODAL NAV -->
+      <div id="menuModal" class="modal">
+        <div class="modal-content">
+          <ul class="menu-list">
+            <li><a href="#home">How It Works</a></li>
+            <li><a href="#fruits">Fruits</a></li>
+            <li><a href="#footer">Contacts</a></li>
+            <li>
+              <a href="#box"
+                ><img class="box" src="./images/box.svg" width="32" height="32"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- HERO SECTiON -->
+      <section class="hero" id="home">
+        <div class="hero-section">
+          <div class="fruits1">
+            <img
+              class="blur-banana"
+              src="./images/blur-banana.png"
+              alt="banana"
+            />
+            <img
+              class="blur-strawberry"
+              src="./images/blur-strawberry.png"
+              alt="strawberry"
+            />
+
+            <h1>
+              FRESH HARVEST BOX IS YOUR ONE-STOP PLACE FOR A DELICIOUS FRUIT
+              BASKET
+            </h1>
+          </div>
+          <picture class="girl">
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                /src/images/girl-mobile1x.webp 1x,
+                /src/images/girl-mobile2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /src/images/girl-tablet1x.webp 1x,
+                /src/images/girl-tablet2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/girl-desktop1x.webp 1x,
+                ./images/girl-desktop2x.webp 2x
+              "
+            />
+            <img src="./images/girl.png" alt="Sebastian Dunduc" />
+          </picture>
+
+          <a href="#shopNOW "
+            ><button class="shop">
+              <span class="button-shop"> SHOP NOW</span>
+            </button></a
+          >
+          <p class="description">
+            Our expertly curated fruit baskets are made with the freshest,
+            highest quality fruits available. Whether you are looking for a
+            healthy snack or a gift for a loved one, Fresh Harvest Box has got
+            you covered.
+          </p>
+          <div class="floating-shapes">
+            <img src="./images/4.svg" class="shape shape-1" />
+            <img src="./images/5.svg" class="shape shape-2" />
+            <img src="./images/6.svg" class="shape shape-3" />
+            <img src="./images/7.svg" class="shape shape-4" />
+            <img src="./images/8.svg" class="shape shape-5" />
+            <img src="./images/9.svg" class="shape shape-6" />
+            <img src="./images/10.svg" class="shape shape-7" />
+            <img src="./images/6.svg" class="shape shape-8" />
+            <img src="./images/12.svg" class="shape shape-9" />
+            <img src="./images/12.svg" class="shape shape-10" />
+            <img src="./images/14.svg" class="shape shape-11" />
+            <img src="./images/9.svg" class="shape shape-12" />
+            <img src="./images/10.svg" class="shape shape-13" />
+            <img src="./images/11.svg" class="shape shape-14" />
+            <img src="./images/12.svg" class="shape shape-15" />
+            <img src="./images/8.svg" class="shape shape-16" />
+            <img src="./images/14.svg" class="shape shape-17" />
+            <img src="./images/13.svg" class="shape shape-18" />
+            <img src="./images/5.svg" class="shape shape-19" />
+            <img src="./images/13.svg" class="shape shape-20" />
+          </div>
+        </div>
+
+        <!-- 2 BLOCKS SECTION -->
+        <div class="blocks">
+          <div class="block-green">
+            <div class="watermelon-box">
+              <h2>Fruit</h2>
+              <img src="./images/watermelon-box.webp" alt="watermelon" />
+              <p>
+                Refreshing and juicy, watermelon is the perfect summer treat and
+                a great source of hydration
+              </p>
+            </div>
+          </div>
+          <div class="block-orange">
+            <div class="strawberry-box">
+              <h2>Fruit</h2>
+              <img src="./images/straweberry-box.webp" alt="watermeloon" />
+              <p>
+                Sweet and juicy, strawberries are packed with vitamin C and
+                antioxidants, making them a delicious and healthy snack
+              </p>
+            </div>
+            <div class="block-hastags">
+              <ul class="hastag-list">
+                <li class="hastag-list-item">
+                  <h3 class="hastag-list-text">#ORGANIC</h3>
+                </li>
+                <li class="hastag-list-item">
+                  <h3 class="hastag-list-text">#PRODUCTS</h3>
+                </li>
+                <li class="hastag-list-item">
+                  <h3 class="hastag-list-text">#BASKET</h3>
+                </li>
+                <li class="hastag-list-item">
+                  <h3 class="hastag-list-text">#FRUIT</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- STEPS SECTION -->
+      <section class="container-step" id="box">
+        <h2 class="title-step">
+          To order your fruit basket, simply follow these easy steps
+        </h2>
+        <p class="description-step">
+          Our baskets are assembled with care and delivered straight to your
+          doorstep, so you can enjoy the taste of fresh fruit without ever
+          leaving your home. Whether you're looking for a healthy snack or a
+          thoughtful gift, our fruit baskets are the perfect choice.
+        </p>
+        <ul class="steps-list">
+          <li class="step-list-item">
+            <span class="step-title">First Step </span>
+            <p class="step-description">
+              Just choose the fruit you want to order by clicking on the
+              checkboxes next to it.
+            </p>
+          </li>
+          <li class="step-list-item">
+            <span class="step-title">Second Step </span>
+            <p class="step-description">
+              Click on the basket and fill out the form.
+            </p>
+          </li>
+          <li class="step-list-item">
+            <span class="step-title">Third Step </span>
+            <p class="step-description">
+              Sit back and relax! Your fresh fruit basket will be delivered.
+            </p>
+          </li>
+        </ul>
+        <img
+          class="gif"
+          src="./images/fruits.gif"
+          alt="fruits-gif"
+          width="704"
+          height="476"
+          loading="lazy"
+        />
+      </section>
+      <!-- LIST FRUIT SECTION -->
+      <section class="organic-fruit-section" id="fruits">
+        <h2 class="organic-fruits-title">ORGANIC FRUITS</h2>
+        <p>
+          Our organic fruits are hand-picked from local farms and delivered
+          straight to your doorstep, ensuring that you get the freshest and most
+          nutritious produce possible. We offer a wide selection of organic
+          fruits grown without the use of harmful pesticides or chemicals.
+        </p>
+        <ul class="organic-fruit-list">
+          <li class="organic-fruit-item strawberry">
+            <h3>Strawberry</h3>
+            <span>Plant</span>
+            <img src="./images/strawberryy.png" />
+            <button>2.18 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item banana">
+            <h3>Banana</h3>
+            <span>Plant</span>
+            <img src="./images/bannana.png" />
+            <button>1.74 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item watermelon">
+            <h3>Watermelon</h3>
+            <span>Plant</span>
+            <img src="./images/watermelon.png" />
+            <button>0.4 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item lime">
+            <h3>Lime</h3>
+            <span>Plant</span>
+            <img src="./images/lime.png" />
+            <button>1.5 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item apple1">
+            <h3>Apple</h3>
+            <span>Plant</span>
+            <img src="./images/apple.png" />
+            <button>1.09 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item peach">
+            <h3>Peach</h3>
+            <span>Plant</span>
+            <img src="./images/peach.png" />
+            <button>1.43 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item plums">
+            <h3>Plums</h3>
+            <span>Plant</span>
+            <img src="./images/plums.png" />
+            <button>0.90 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item orange">
+            <h3>Orange</h3>
+            <span>Plant</span>
+            <img src="./images/orange.png" />
+            <button>1.2 EUR/kg</button>
+          </li>
+          <li class="organic-fruit-item kiwi">
+            <h3>Kiwi</h3>
+            <span>Plant</span>
+            <img src="./images/kiwi.png" />
+            <button>2 EUR/kg</button>
+          </li>
+        </ul>
+        <button class="order-button" id="openOrderBtn">Order Now</button>
+        <div class="order-menu-modal" id="orderMenuModal">
+          <button
+            class="close-menu-order"
+            id="closeOrderMenuBtn"
+            style="display: none"
+            aria-label="Close menu Order"
+          >
+            <svg
+              class="close-icon-menu"
+              width="24"
+              height="24"
+              viewBox="24 24"
+              fill="transparent"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="4"
+                y1="4"
+                x2="20"
+                y2="20"
+                stroke="#AE1332"
+                stroke-width="2"
+              />
+              <line
+                x1="20"
+                y1="4"
+                x2="4"
+                y2="20"
+                stroke="#AE1332"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <div class="order-menu-modal-content">
+            <h2 class="order-menu-title">YOUR ORDER</h2>
+            <ul class="order-menu-list">
+              <li class="order-menu-list-item strawberry2">
+                <div class="title-subtitle">
+                  <h3 class="order-menu-list-title">Strawberry Basket</h3>
+                  <span class="order-menu-span">Plant</span>
+                </div>
+                <label class="check-button">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <img src="./images/strawberry-basket.png" alt="strawberry" />
+              </li>
+              <li class="order-menu-list-item apple2">
+                <div class="title-subtitle">
+                  <h3 class="order-menu-list-title">Apple Basket</h3>
+                  <span class="order-menu-span">Plant</span>
+                </div>
+                <label class="check-button">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <img src="./images/appe-basket.png" alt="apple" />
+              </li>
+              <li class="order-menu-list-item fruit">
+                <div class="title-subtitle">
+                  <h3 class="order-menu-list-title">Fruit Basket</h3>
+                  <span class="order-menu-span">Plant</span>
+                </div>
+                <label class="check-button">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <img src="./images/fruits-basket.png" alt="fruits" />
+              </li>
+            </ul>
+            <form class="modal-form">
+              <label class="form-label">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="username"
+                  placeholder="Enter full name..."
+                />
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter email..."
+                />
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-input"
+                  type="number"
+                  name="card-number"
+                  placeholder="Enter card..."
+                />
+              </label>
+              <label class="form-label">
+                <textarea
+                  class="form-input comments"
+                  placeholder="Enter comments..."
+                ></textarea>
+              </label>
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS SECTION -->
+      <div class="contact-section" id="shopNOW">
+        <h2 class="contact-title">FRESH HARVEST BOX HAS GOT YOU COVERED</h2>
+        <div class="fresh-picture-container">
+          <img
+            class="fresh-picture"
+            src="./images/form-photo.png"
+            alt=""
+            width="335"
+            height="476"
+          />
+          <img
+            class="fresh-picture2"
+            src="./images/form-photo2.png"
+            alt=""
+            width="335"
+            height="476"
+          />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <p class="form-description">
+          Our boxes are packed with delicious, nutritious fruits and vegetables,
+          perfect for anyone looking to eat healthier or support local farmers.
+          Order your box today and start enjoying the best that nature has to
+          offer!
+        </p>
+        <form class="form-fresh" id="myForm">
+          <input
+            class="input-form-fresh"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter e-mail"
+          />
+          <button class="form-button" type="submit">Send</button>
+        </form>
+        <!-- SMALL MODAL -->
+        <div id="myModal" class="small-modal">
+          <span class="close-button">&times;</span>
+          <div class="small-modal-content">
+            <img src="./images/raspberry.png" />
+            <h2 class="pop-up-title">THANK YOU</h2>
+            <p class="pop-up-description">
+              Thank you for your order! Our team is preparing your box with
+              fresh, delicious fruits and vegetables, and we'll deliver it
+              straight to your doorstep. We appreciate your business and look
+              forward to providing you with the best possible experience!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <section class="footer" id="footer">
+        <div class="footer-section">
+          <img class="footer-img" src="./images/footer-img.png" alt="" />
+          <h3>FRESH HARVEST BOX</h3>
+
+          <ul class="link-list-footer">
+            <li class="link-list-footer-item">
+              <a href="#home">How It Works</a>
+            </li>
+            <li class="link-list-footer-item"><a href="#fruits">Fruits</a></li>
+            <li class="link-list-footer-item">
+              <a href="#footer">Contacts</a>
+            </li>
+          </ul>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="https://www.facebook.com/">
+                <img src="./images/1.svg" alt="icon"
+              /></a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://www.instagram.com/"
+                ><img src="./images/2.svg" alt="icon"
+              /></a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://www.youtube.com/"
+                ><img src="./images/3.svg" alt="icon"
+              /></a>
+            </li>
+          </ul>
+          <div class="contact-footer-adress">
+            <span class="phone"> +380 (68) 443-94-26</span>
+            <span class="adress"
+              >1678 S. Pioneer Road Salt Lake City UT 84104</span
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./modals/nav-modal.js"></script>
+    <script src="./modals/small-modal.js"></script>
+    <script src="./modals/menu-modal.js"></script>
+  </body>
+</html>
