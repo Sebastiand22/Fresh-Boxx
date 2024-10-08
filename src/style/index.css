@@ -421,7 +421,7 @@ button {
 /* ORGANIC FRUITS SECTION */
 
 .organic-fruit-section {
-  max-width: 375px;
+  max-width: 300px;
   padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
@@ -695,7 +695,7 @@ button {
 }
 
 /* SMALL MODAL */
-
+.form-section{display:none;}
 .small-modal {
   display: none;
   width: 335px;
@@ -744,7 +744,7 @@ button {
 
 .order-menu-modal {
   display: none;
-  width: 375px;
+  max-width: 375px;
   min-height: 600px;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
