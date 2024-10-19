@@ -1461,9 +1461,9 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 46px;
     padding: 85px;
-    justify-content: center;
+    justify-content: center; 
   }
 
   /* Containere pentru forme plutitoare */
