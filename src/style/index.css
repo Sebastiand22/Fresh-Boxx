@@ -126,8 +126,7 @@ button {
   position: relative;
   bottom: 50px;
 
-  box-shadow:0 0px #47012e, 0 1.5px 0 .4px #3f001280;
-
+  box-shadow: 0 0px #47012e, 0 1.5px 0 0.4px #3f001280;
 }
 
 .girl:hover {
@@ -142,7 +141,6 @@ button {
   position: relative;
   bottom: 102px;
   transform: rotate(336deg);
-
 }
 
 .button-shop {
@@ -421,7 +419,7 @@ button {
 /* ORGANIC FRUITS SECTION */
 
 .organic-fruit-section {
-  max-width: 300px;
+  max-width: 350px;
   padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
@@ -538,7 +536,7 @@ button {
   font-size: 15px;
   transform: rotate(-14deg);
   margin-bottom: 40px;
-  margin-left: 132px;
+  margin-left: 115px;
 }
 
 /* CONTACT SECTION */
@@ -695,7 +693,9 @@ button {
 }
 
 /* SMALL MODAL */
-.form-section{display:none;}
+.form-section {
+  display: none;
+}
 .small-modal {
   display: none;
   width: 335px;
@@ -994,7 +994,9 @@ button {
     height: 600px;
     display: block;
   }
-
+  .orange img {
+    margin-bottom: 37px;
+  }
   .floating-shapes {
     display: none;
   }
@@ -1121,7 +1123,6 @@ button {
     font-family: DM Sans;
     font-size: 50px;
     font-weight: 500;
-
     margin-bottom: 20px;
   }
 
@@ -1152,9 +1153,8 @@ button {
     border-radius: 20px;
     transition: transform 0;
   }
-
-  .kiwi {
-    display: none;
+  .plums button {
+    margin-bottom: 50px;
   }
 
   .organic-fruit-item h3 {
@@ -1203,7 +1203,6 @@ button {
 
 /* DESKTOP DESIGN */
 @media (min-width: 1280px) {
-
   .shop {
     width: 115px;
     height: 115px;
@@ -1306,7 +1305,6 @@ button {
     align-items: center;
     position: relative;
     max-width: 1200px;
-    
   }
 
   h1 {
@@ -1451,12 +1449,21 @@ button {
     font-size: 14px;
     line-height: 1.5;
   }
-  .kiwi {
-    display: block;
-  }
+  
+  .kiwi img{width: 274px;
+    height: 242px}
 
   .organic-fruit-section {
     max-width: 1280px;
+  }
+
+  .organic-fruit-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding: 85px;
+    justify-content: center;
   }
 
   /* Containere pentru forme plutitoare */
@@ -1479,7 +1486,6 @@ button {
     opacity: 0.7;
     transition: transform 0.5s ease-in-out, opacity 1.5s ease-in-out;
     animation: float 5s ease-in-out infinite, fadeInOut 4s ease-in-out infinite;
-
   }
 
   /* Efect de plutire */
@@ -1517,7 +1523,6 @@ button {
     }
   }
 
-  
   /* Forme individuale cu poziționare unică */
   .shape-1 {
     width: 100px;
